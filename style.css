@@ -1,0 +1,183 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundaria: #C0C0C0;    
+    --botao-azul: #c406ca;
+    --cor-de-fundo: #000000;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #ff0d92;
+}
+
+body  {
+    background-color:  var(--cor-de-fundo);
+    color:var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("img/loll.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+    margin: 1em 0;
+    border-image-outset: 2px;
+    
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 100px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0.5em;
+    transition: 2s;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+
+}
+
+.container__titulo {
+    font-size: 24px;
+    font-weight: 700;
+    color:#c406ca;
+}
+
+.container__image {
+    margin: 1em 0 1em 0;
+    width: 500px;
+}
+
+.container__caixa {
+    margin: 0 6em
+}
+
+.secundario__image {
+    width: 90%;
+    border-radius: 15px;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 8em;
+}
+
+.terceiro__image {
+    border-image-width: 20px;
+    width: 90%
+}
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--branco-principal);
+    margin-bottom: 0.3em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario)
+
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 2em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+
+}
+
+.dispositivos__titulo {
+    font-size: 40px;
+    color: var(--branco-principal)
+}
+
+.lista__item {
+    font-size: 30px;
+    color: var(--branco-principal);
+
+}
+/*  position: absolute;
+    right: 10em;
+    margin: 1em 2em 2em 2em;
+    padding-left: 10%;
+    top: 87em/* */
+
+
+.video {
+    margin: 2em 2em 2em 2em;
+    text-align: center;
+}
+
+.titulodolol {
+    text-align: center;
+}
+
+.logo {
+    width: 220px;
+    align-self: center;
+}
+
+.rodape__lista {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: rgb(123, 123, 238);
+    margin-left: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.rodape {
+    text-align: center;
+    margin: 4em 3em;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    transition: 1s
+}
